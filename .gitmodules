@@ -1,0 +1,3 @@
+[submodule "dependencies/HackMyResume"]
+	path = dependencies/HackMyResume
+	url = git@github.com:hacksalot/HackMyResume.git

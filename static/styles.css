@@ -1,0 +1,18 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 200px;
+    padding: 16px 32px;
+    margin-top: 100px;
+    display: block;
+    margin-left: 150px;
+    margin-right: 150px;
+    min-width: 500px;
+}
+
+body {
+    background-color:lightgrey;
+    text-align: center;
+}

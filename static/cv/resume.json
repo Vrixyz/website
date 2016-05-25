@@ -1,0 +1,178 @@
+ {
+ 	"name": "Thierry Berger",
+ 	"meta": {
+ 		"format": "FRESH@0.6.0",
+ 		"version": "0.4.0"
+ 	},
+ 	"info": {
+ 		"label": "Mobile Developer",
+ 		"characterClass": "Programmer",
+ 		"brief": "Humble team worker, always learning, motivated in video games development because of its complexity.",
+ 		"image": "jane_doe.png",
+ 		"quote": "Perfect is the enemy of good"
+ 	},
+ 	"contact": {
+ 		"email": "thierry.berger@epitech.eu"
+ 	},
+ 	"location": {
+ 		"city": "Paris",
+ 		"code": "75020",
+ 		"country": "FR"
+ 	},
+ 	"employment": {
+ 		"summary": "2+ years industry IT and software development experience.",
+ 		"history": [{
+ 			"employer": "Ubisoft Mobile",
+ 			"url": "https://www.ubisoft.com",
+ 			"position": "Mobile developer",
+ 			"summary": "Development on the tools library used by most ubisoft mobile games. Support for development studios.",
+ 			"start": "2016-10",
+ 			"keywords": ["Objective-C", "C", "C++", "Java", "Facebook", "Android", "iOS", "Sina Weibo", "Mercurial", "Gradle", "Xcode", "Eclipse", "ant", "bash"]
+ 		}, {
+ 			"employer": "Mob in Life",
+ 			"position": "iOS Developer",
+ 			"summary": "Developer of the iOS version of [**City Domination**](https://itunes.apple.com/us/app/city-domination-mafia-mmo/id658386865).",
+ 			"start": "2015-02",
+ 			"end": "2015-08",
+ 			"keywords": ["Objective-C", "C", "iOS", "TestFairy", "SupersonicAds", "Yodiz", "Git", "Agile"],
+ 			"TODO": "karim ?"
+ 		}, {
+ 			"employer": "Innovation 31",
+ 			"url": "http://www.innovation31.com/",
+ 			"position": "iOS Developer",
+ 			"summary": "Research and development. Team formation on iOS.",
+ 			"start": "2014-08",
+ 			"end": "2015-03",
+ 			"keywords": ["Objective-C", "C", "iOS", "Swift", "Xcode", "SVN"]
+ 		}, {
+ 			"employer": "Agile Partners",
+ 			"url": "http://www.agilepartner.net/",
+ 			"position": "Developer RTD",
+ 			"summary": "Development on iOS and Windows8.",
+ 			"start": "2011-09",
+ 			"end": "2012-05",
+ 			"keywords": ["Objective-C", "C", "iOS", "Windows 8", "Xcode", "C#", "TFS", "Agile", "Visual Studio"]
+ 		}, {
+ 			"employer": "Sailendra",
+ 			"url": "http://www.sailendra.fr/",
+ 			"position": "Developer web full stack",
+ 			"summary": "Development of a new customizable statistics view for the clients.",
+ 			"start": "2011-02",
+ 			"end": "2011-08",
+ 			"keywords": ["Grails", "Java", "SQL", "html", "Javascript", "CSS", "Eclipse", "Mercurial"]
+ 		}]
+ 	},
+ 	"education": {
+ 		"summary": "",
+ 		"level": "degree",
+ 		"degree": "Master",
+ 		"history": [{
+ 			"institution": "Keimyung",
+ 			"title": "Mobile and Games development",
+ 			"url": "http://www.kmu.ac.kr/english/",
+ 			"start": "2013-08",
+ 			"end": "2014-06",
+ 			"grade": "2.49",
+ 			"summary": "Discovery of Korean culture mixed with game development courses.",
+ 			"curriculum": ["Mobile Game development", "Unity3d", "OpenGL", "Korean language"]
+ 		}, {
+ 			"institution": "EPITECH",
+ 			"title": "Computer Science",
+ 			"url": "http://www.epitech.eu/",
+ 			"start": "2010-09",
+ 			"end": "2015-09",
+ 			"grade": "2.98",
+ 			"curriculum": ["Shell", "C", "C++", "Algorithmics", "Applied Mathematics", "Management"]
+ 		}]
+ 	},
+ 	"projects": [{
+ 		"title": "Super Meet Ball",
+ 		"category": "Ludum Dare",
+ 		"role": "Developer",
+ 		"url": "http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=55033",
+ 		"start": "2015-12",
+ 		"end": "2015-12",
+ 		"repo": "https://bitbucket.org/Shurty/ld34",
+ 		"description": "Love... yes, no..? Love.",
+ 		"summary": "A cute game made with Unity over a week-end by a team of 7 explorers.",
+ 		"keywords": ["Unity", "C#", "Git", "Ludum Dare"]
+ 	}, {
+ 		"title": "Super Monster Fighter 2",
+ 		"category": "Ludum Dare",
+ 		"role": "Developer",
+ 		"start": "2015-08",
+ 		"end": "2015-08",
+ 		"repo": "https://github.com/TomOlivier/ld33",
+ 		"description": "Destroy everything! Kill everyone!",
+ 		"summary": "A fun local multiplayer fighting game.",
+ 		"keywords": ["Unity", "Javascript", "Git", "Ludum Dare"]
+ 	}, {
+ 		"title": "Jubeat Return",
+ 		"category": "Free project",
+ 		"role": "Developer",
+ 		"start": "2014-10",
+ 		"end": "2015-01",
+ 		"repo": "https://bitbucket.org/Shurty/jubeatreturnv2",
+ 		"description": "A full recode of the already existing successful [**Jubeat**](https://en.wikipedia.org/wiki/Jubeat).",
+ 		"summary": "A fast arcade game focused on rythm on music on a tailored physical device",
+ 		"keywords": ["C++", "SFML", "Git", "Arduino", "Electronics", "Processing"]
+ 	}],
+ 	"skills": {
+ 		"sets": [{
+ 			"name": "Mobile",
+ 			"level": "master",
+ 			"skills": [
+ 				"C", "iOS", "Swift", "Objective-C", "tvOS", "Android", "Java", "C++", "JNI"
+ 			]
+ 		}, {
+ 			"name": "Cross-platform",
+ 			"level": "advanced",
+ 			"skills": [
+ 				"C", "Unity3d", "Cocos2d", "Lua", "Javascript", "SFML", "Anticipation", "Defold"
+ 			]
+ 		}, {
+ 			"name": "Teamwork",
+ 			"level": "master",
+ 			"skills": [
+ 				"Git", "Mercurial", "SVN", "Agile", "Time estimation"
+ 			]
+ 		}, {
+ 			"name": "Quality",
+ 			"level": "advanced",
+ 			"skills": [
+ 				"Version control", "TestFlight", "gdb", "Automated tests", "Risk estimation"
+ 			]
+ 		}]
+ 	},
+ 	"affiliation": {},
+ 	"service": {},
+ 	"disposition": {},
+ 	"writing": [],
+ 	"reading": [],
+ 	"speaking": [],
+ 	"governance": [],
+ 	"recognition": [],
+ 	"samples": [],
+ 	"social": [],
+ 	"references": [],
+ 	"testimonials": [{
+ 		"name": "Karim le-nir",
+ 		"flavor": "Game developer",
+ 		"quote": "I truly recommend [Thierry] in any technical position that would require strong tech skills and a global vision of how things are supposed to work, both on the functional and technical aspects."
+ 	}],
+ 	"extracurricular": [],
+ 	"interests": [],
+ 	"languages": [{
+ 		"language": "French",
+ 		"level": "Native"
+ 	}, {
+ 		"language": "English",
+ 		"level": "Fluent"
+ 	}, {
+ 		"language": "Italian",
+ 		"level": "Moderate"
+ 	}, {
+ 		"language": "Korean",
+ 		"level": "Beginner"
+ 	}]
+ }
