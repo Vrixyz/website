@@ -26,7 +26,7 @@ var numberOfFiles = len(files)
 
 func handler_cv(w http.ResponseWriter, r *http.Request, buffer *bytes.Buffer) {
 	randomIndex := rand.Int() % numberOfFiles
-	buffer.WriteString(" | serving: ")
+	buffer.WriteString(" | serving: /")
 	buffer.WriteString(files[randomIndex])
 	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate") // HTTP 1.1.
 	w.Header().Set("Pragma", "no-cache") // HTTP 1.0.
@@ -43,7 +43,7 @@ func ProfiledHandle(handler func(http.ResponseWriter, *http.Request, *bytes.Buff
 		// TODO: defer all this to manage possible crash in function handler
 		end := time.Now()
 		responseTime := end.Sub(start)
-		log.Println(buffer.String(), " | request: ", r, " | response time: ", responseTime)
+		log.Println(buffer.String(), "| request:", r, "| response time:", responseTime.Nanoseconds())
 	}
 }
 
