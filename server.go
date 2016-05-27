@@ -48,7 +48,7 @@ func ProfiledHandle(handler func(http.ResponseWriter, *http.Request, *bytes.Buff
 }
 
 func main() {
-	logFile, err := os.Create("log/logs.txt")
+	logFile, err := os.Create("/tmp/website-logs.txt")
 	if (err != nil) {
 		panic(err)
 	}
