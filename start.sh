@@ -1,6 +1,6 @@
 #!/bin/sh
 
-: "${WEBSITE_PATH:?Need to set WEBSITE_ROOT non-empty}"
+: "${WEBSITE_PATH:?Need to set WEBSITE_PATH non-empty}"
 
 #FIXME: logstash needs conf file as parameter
 ( \

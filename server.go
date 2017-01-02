@@ -53,6 +53,7 @@ func redirectToHttps(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
 	logFile, err := os.Create("/tmp/website-logs.txt")
 	if (err != nil) {
 		panic(err)
