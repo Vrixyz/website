@@ -2,6 +2,7 @@
 
 : "${WEBSITE_PATH:?Need to set WEBSITE_ROOT non-empty}"
 
+#FIXME: logstash needs conf file as parameter
 ( \
   ${WEBSITE_PATH}/scripts/start-custom.sh -d elasticsearch && \
   ${WEBSITE_PATH}/scripts/start-custom.sh -d logstash && \

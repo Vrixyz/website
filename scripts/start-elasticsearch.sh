@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo DAEMON    = "${DAEMON}"
+: "${ELASTICSEARCH_PATH:?Need to set ELASTICSEARCH_PATH non-empty}"
 
-: "${ELASTICESEARCH_PATH:?Need to set ELASTICESEARCH_PATH non-empty}"
-
-${ELASTICESEARCH_PATH}/bin/elasticsearch
+${ELASTICSEARCH_PATH}/bin/elasticsearch

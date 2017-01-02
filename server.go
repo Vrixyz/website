@@ -47,6 +47,11 @@ func ProfiledHandle(handler func(http.ResponseWriter, *http.Request, *bytes.Buff
 	}
 }
 
+func redirectToHttps(w http.ResponseWriter, r *http.Request) {
+    // Redirect the incoming HTTP request.
+    http.Redirect(w, r, "https://thierryberger.com:8081"+r.RequestURI, http.StatusMovedPermanently)
+}
+
 func main() {
 	logFile, err := os.Create("/tmp/website-logs.txt")
 	if (err != nil) {
@@ -67,6 +72,6 @@ func main() {
 	numberOfFiles = len(files)
 	log.Println("errfiles: ", errfiles, " ; files: ", files)
 
-	serve_err := http.ListenAndServe(":8080", nil)
-	log.Println("error: ", serve_err)
+	go http.ListenAndServeTLS(":8081", "cert.pem", "key.pem", nil)
+	http.ListenAndServeTLS(":8080", http.HandlerFunc(redirectToHttps))
 }
