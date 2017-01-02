@@ -24,7 +24,9 @@ func handler_root(w http.ResponseWriter, r *http.Request, buffer *bytes.Buffer) 
 var files, errfiles = filepath.Glob("static/cv/*\\.html")
 var numberOfFiles = len(files)
 
-var challenge, errchallenge = filepath.Glob(".well-known/acme-challenge/*")
+var challengeFiles, err = filepath.Glob(".well-known/*")
+
+var challenge = challengeFiles[0][1:len(challengeFiles[0])]
 
 func handler_cv(w http.ResponseWriter, r *http.Request, buffer *bytes.Buffer) {
 	randomIndex := rand.Int() % numberOfFiles
@@ -50,7 +52,10 @@ func ProfiledHandle(handler func(http.ResponseWriter, *http.Request, *bytes.Buff
 }
 
 func handler_tls(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, r.URL.Path)
+	log.Println(r.URL.Path,";","."+challenge)
+        if r.URL.Path[1:len(r.URL.Path)] == challenge {
+          http.ServeFile(w, r, "." + challenge)
+        } 
 }
 
 func redirectToHttps(w http.ResponseWriter, r *http.Request) {
@@ -80,7 +85,7 @@ func main() {
 	numberOfFiles = len(files)
 	log.Println("errfiles: ", errfiles, " ; files: ", files)
 
-	go http.ListenAndServeTLS(":8081", "cert.pem", "key.pem", nil)
-	http.ListenAndServe(":8080", nil)
+	go http.ListenAndServeTLS(":8083", "cert.pem", "key.pem", nil)
+	http.ListenAndServe(":8082", nil)
 	//http.ListenAndServeTLS(":8080", http.HandlerFunc(redirectToHttps))
 }
