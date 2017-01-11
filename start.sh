@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 : "${WEBSITE_PATH:?Need to set WEBSITE_PATH non-empty}"
 

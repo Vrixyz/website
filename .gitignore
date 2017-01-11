@@ -23,3 +23,7 @@ _testmain.go
 *.test
 *.prof
 log/*
+letsencrypt
+static/cv
+*.pem
+.well-known
